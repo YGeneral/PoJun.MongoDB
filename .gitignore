@@ -1,0 +1,10 @@
+*.pdb
+*.suo
+*.user
+bin
+obj
+*.log
+*.pubxml
+.vs
+/src/v1/packages
+/src/v2/packages
