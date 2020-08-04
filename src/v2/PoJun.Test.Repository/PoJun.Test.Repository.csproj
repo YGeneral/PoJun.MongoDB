@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="mongocsharpdriver" Version="2.5.0" />
-    <PackageReference Include="PoJun.MongoDB.Repository" Version="2.0.0" />
-    <PackageReference Include="PoJun.MongoDB.Repository.IEntity" Version="2.0.1" />
+    <PackageReference Include="PoJun.MongoDB.Repository" Version="3.0.4" />
   </ItemGroup>
 
 </Project>
