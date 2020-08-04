@@ -430,7 +430,7 @@ namespace PoJun.MongoDB.Repository
         public BsonDocument Render(UpdateDefinition<TEntity> update)
         {
             var collection = GetCollection();
-            return update.Render(collection.DocumentSerializer, collection.Settings.SerializerRegistry);
+            return (BsonDocument)update.Render(collection.DocumentSerializer, collection.Settings.SerializerRegistry);
         }
 
         /// <summary>

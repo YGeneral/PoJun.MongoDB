@@ -1,10 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net45;net451;net46;net47;netstandard2.0</TargetFrameworks>
-    <FileVersion>1.0.0.2</FileVersion>
-    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <TargetFrameworks>net452;net46;net47;netstandard2.0</TargetFrameworks>
+    <FileVersion>3.0.4.0</FileVersion>
+    <AssemblyVersion>3.0.4.0</AssemblyVersion>
     <SignAssembly>false</SignAssembly>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>3.0.4</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -12,8 +14,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="mongocsharpdriver" Version="2.5.0" />
-    <PackageReference Include="PoJun.MongoDB.Repository.IEntity" Version="2.0.1" />
+    <PackageReference Include="mongocsharpdriver" Version="2.11.0" />
+    <PackageReference Include="PoJun.MongoDB.Repository.IEntity" Version="2.0.3" />
   </ItemGroup>
 
 </Project>

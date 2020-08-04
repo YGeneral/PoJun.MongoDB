@@ -1,4 +1,5 @@
-﻿using PoJun.MongoDB.Repository.Test.Entity;
+﻿using MongoDB.Driver;
+using PoJun.MongoDB.Repository.Test.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +37,7 @@ namespace PoJun.MongoDB.Repository.Test
         {
 
         }
-        
+
     }
 
     public class APILogRepository : MongoRepositoryAsync<APILog, string>
@@ -45,6 +46,17 @@ namespace PoJun.MongoDB.Repository.Test
             base(Repositorys.connString, Repositorys.dbName, null, null)
         {
 
+        }
+
+        /// <summary>
+        /// 创建索引
+        /// </summary>
+        /// <returns></returns>
+        public Task CreateIndex()
+        {
+            var builder = Builders<APILog>.IndexKeys;
+            var indexModel = new CreateIndexModel<APILog>(builder.Descending(x => x.CreateTime));
+            return this.Database.GetCollection<APILog>(nameof(APILog)).Indexes.CreateOneAsync(indexModel);
         }
     }
 

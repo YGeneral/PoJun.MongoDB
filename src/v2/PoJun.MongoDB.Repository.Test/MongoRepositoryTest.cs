@@ -1,7 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Driver;
 using PoJun.MongoDB.Repository.Test.Repositroy;
 using System;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -21,11 +23,14 @@ namespace PoJun.MongoDB.Repository.Test
 
             APILogRepository apilog = new APILogRepository();
 
-            var d = await apilog.InsertAsync(new Entity.APILog() { APIName = "sdfsafd", CreateTime=DateTime.Now });
+            var d = await apilog.InsertAsync(new Entity.APILog() { APIName = "sdfsafd", CreateTime = DateTime.Now });
 
             var list = await userRep.GetListAsync(x => x.Name == "ggg");
             UserRepAsync up = new UserRepAsync();
             list = await up.GetListAsync(x => x.Name == "ggg");
+
+            await apilog.CreateIndex();
+
             Assert.AreNotEqual(list.Count, 0);
         }
     }

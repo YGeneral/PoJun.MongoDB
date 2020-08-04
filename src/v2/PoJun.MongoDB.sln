@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoJun.MongoDB.Repository", "PoJun.MongoDB.Repository\PoJun.MongoDB.Repository.csproj", "{01611F6A-66E4-4802-B985-250F11C5EC36}"
 EndProject
@@ -9,17 +9,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{87542B76-3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoJun.MongoDB.Repository.Test", "PoJun.MongoDB.Repository.Test\PoJun.MongoDB.Repository.Test.csproj", "{B8CC6C36-D232-4C66-B757-871F19717031}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoJun.MongoDB.Repository.UnitTest", "PoJun.MongoDB.Repository.UnitTest\PoJun.MongoDB.Repository.UnitTest.csproj", "{80E11303-3E96-44FB-BF22-8D5CD47022A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoJun.MongoDB.Repository.UnitTest", "PoJun.MongoDB.Repository.UnitTest\PoJun.MongoDB.Repository.UnitTest.csproj", "{80E11303-3E96-44FB-BF22-8D5CD47022A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoJun.Test.Repository", "PoJun.Test.Repository\PoJun.Test.Repository.csproj", "{C59700E1-C2BF-4F5F-AD7B-FCC1D1E56AED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoJun.Test.Repository", "PoJun.Test.Repository\PoJun.Test.Repository.csproj", "{C59700E1-C2BF-4F5F-AD7B-FCC1D1E56AED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoJun.Test.API", "PoJun.Test.API\PoJun.Test.API.csproj", "{68AF196E-F127-4DBC-AE8B-38452B3F7EDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoJun.Test.API", "PoJun.Test.API\PoJun.Test.API.csproj", "{68AF196E-F127-4DBC-AE8B-38452B3F7EDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoJun.Test.API.Reposiory", "PoJun.Test.API.Reposiory\PoJun.Test.API.Reposiory.csproj", "{28837E3A-C187-4446-A1E1-769254A2D0D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoJun.Test.API.Reposiory", "PoJun.Test.API.Reposiory\PoJun.Test.API.Reposiory.csproj", "{28837E3A-C187-4446-A1E1-769254A2D0D5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UseTest", "UseTest", "{0445344A-5D74-4653-A8DF-7070DD8FECC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoJun.Test.Entity", "PoJun.Test.Entity\PoJun.Test.Entity.csproj", "{7A0A02BA-A391-4C4F-A909-FFC5F3E571CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoJun.Test.Entity", "PoJun.Test.Entity\PoJun.Test.Entity.csproj", "{7A0A02BA-A391-4C4F-A909-FFC5F3E571CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoJun.MongoDB.Repository.IEntity", "PoJun.MongoDB.Repository.IEntity\PoJun.MongoDB.Repository.IEntity.csproj", "{233A56A8-8A4A-4749-BB6A-E15AB8173C4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{7A0A02BA-A391-4C4F-A909-FFC5F3E571CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A0A02BA-A391-4C4F-A909-FFC5F3E571CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A0A02BA-A391-4C4F-A909-FFC5F3E571CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{233A56A8-8A4A-4749-BB6A-E15AB8173C4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{233A56A8-8A4A-4749-BB6A-E15AB8173C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{233A56A8-8A4A-4749-BB6A-E15AB8173C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{233A56A8-8A4A-4749-BB6A-E15AB8173C4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

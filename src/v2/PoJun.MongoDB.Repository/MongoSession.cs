@@ -1,4 +1,5 @@
 ﻿using MongoDB.Driver;
+using MongoDB.Driver.GridFS;
 
 namespace PoJun.MongoDB.Repository
 {
@@ -57,7 +58,7 @@ namespace PoJun.MongoDB.Repository
         /// <param name="writeConcern">WriteConcern选项</param>
         /// <param name="isSlaveOK"></param>
         /// <param name="readPreference"></param>
-        public MongoSession(MongoClientSettings mongoClientSettings, string dbName, WriteConcern writeConcern = null, bool isSlaveOK = false, ReadPreference readPreference = null)
+        public MongoSession(MongoClientSettings mongoClientSettings, string dbName, WriteConcern writeConcern = null, bool isSlaveOK = false, ReadPreference readPreference = null, bool isGridFS = false)
             : this(new MongoClient(mongoClientSettings), dbName, writeConcern, isSlaveOK, readPreference)
         { }
 
